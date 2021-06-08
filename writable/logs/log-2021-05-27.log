@@ -1,0 +1,853 @@
+ERROR - 2021-05-27 08:29:41 --> Table 'blogfikri.blog' doesn't exist
+CRITICAL - 2021-05-27 08:29:41 --> Call to a member function getResult() on bool
+#0 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll()
+#1 /home/koni/projects/blog-fikri/app/Controllers/Blog.php(14): CodeIgniter\BaseModel->findAll()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Blog->index()
+#3 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#4 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#5 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#6 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#7 {main}
+ERROR - 2021-05-27 08:30:03 --> Table 'blogfikri.blog' doesn't exist
+CRITICAL - 2021-05-27 08:30:03 --> Table 'blogfikri.blog' doesn't exist
+#0 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query()
+#4 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll()
+#6 /home/koni/projects/blog-fikri/app/Controllers/Blog.php(14): CodeIgniter\BaseModel->findAll()
+#7 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Blog->index()
+#8 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#9 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#11 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#12 {main}
+CRITICAL - 2021-05-27 08:49:45 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+#0 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Post->show()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#5 {main}
+ERROR - 2021-05-27 08:52:15 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: YES)
+CRITICAL - 2021-05-27 08:52:15 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: YES)
+#0 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2049): CodeIgniter\Database\BaseConnection->query()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\Database\BaseBuilder->getWhere()
+#3 /home/koni/projects/blog-fikri/app/Models/Post.php(13): CodeIgniter\Model->__call()
+#4 /home/koni/projects/blog-fikri/app/Controllers/Post.php(41): App\Models\Post->readPost()
+#5 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Post->show()
+#6 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#7 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#9 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#10 {main}
+ERROR - 2021-05-27 08:52:21 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: YES)
+CRITICAL - 2021-05-27 08:52:21 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: YES)
+#0 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2049): CodeIgniter\Database\BaseConnection->query()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\Database\BaseBuilder->getWhere()
+#3 /home/koni/projects/blog-fikri/app/Models/Post.php(13): CodeIgniter\Model->__call()
+#4 /home/koni/projects/blog-fikri/app/Controllers/Post.php(41): App\Models\Post->readPost()
+#5 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Post->show()
+#6 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#7 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#9 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#10 {main}
+CRITICAL - 2021-05-27 09:03:30 --> Call to a member function getRowArray() on null
+#0 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Post->show()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#5 {main}
+CRITICAL - 2021-05-27 09:03:32 --> Call to a member function getRowArray() on null
+#0 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Post->show()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#5 {main}
+CRITICAL - 2021-05-27 09:03:33 --> Call to a member function getRowArray() on null
+#0 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Post->show()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#5 {main}
+CRITICAL - 2021-05-27 09:03:34 --> Call to a member function getRowArray() on null
+#0 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Post->show()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#5 {main}
+CRITICAL - 2021-05-27 09:06:21 --> Call to undefined method App\Models\Post::readPost
+#0 /home/koni/projects/blog-fikri/app/Controllers/Post.php(39): CodeIgniter\Model->__call()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Post->show()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#3 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#6 {main}
+CRITICAL - 2021-05-27 09:06:22 --> Call to undefined method App\Models\Post::readPost
+#0 /home/koni/projects/blog-fikri/app/Controllers/Post.php(39): CodeIgniter\Model->__call()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Post->show()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#3 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#6 {main}
+CRITICAL - 2021-05-27 09:06:23 --> Call to undefined method App\Models\Post::readPost
+#0 /home/koni/projects/blog-fikri/app/Controllers/Post.php(39): CodeIgniter\Model->__call()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Post->show()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#3 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#6 {main}
+CRITICAL - 2021-05-27 09:06:25 --> Call to undefined method App\Models\Post::readPost
+#0 /home/koni/projects/blog-fikri/app/Controllers/Post.php(39): CodeIgniter\Model->__call()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Post->show()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#3 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#6 {main}
+CRITICAL - 2021-05-27 09:06:34 --> Call to undefined method App\Models\Post::readPost
+#0 /home/koni/projects/blog-fikri/app/Controllers/Post.php(39): CodeIgniter\Model->__call()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Post->show()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#3 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#6 {main}
+CRITICAL - 2021-05-27 09:07:20 --> Declaration of App\Controllers\Post::show() must be compatible with CodeIgniter\RESTful\ResourceController::show($id = null)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-05-27 09:07:21 --> Declaration of App\Controllers\Post::show() must be compatible with CodeIgniter\RESTful\ResourceController::show($id = null)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-05-27 09:08:35 --> Call to undefined method App\Models\Post::readPost
+#0 /home/koni/projects/blog-fikri/app/Controllers/Post.php(15): CodeIgniter\Model->__call()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Post->show()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#3 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#6 {main}
+CRITICAL - 2021-05-27 09:08:36 --> Call to undefined method App\Models\Post::readPost
+#0 /home/koni/projects/blog-fikri/app/Controllers/Post.php(15): CodeIgniter\Model->__call()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Post->show()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#3 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#6 {main}
+CRITICAL - 2021-05-27 09:08:38 --> Call to undefined method App\Models\Post::readPost
+#0 /home/koni/projects/blog-fikri/app/Controllers/Post.php(15): CodeIgniter\Model->__call()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Post->show()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#3 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#6 {main}
+CRITICAL - 2021-05-27 09:14:38 --> Call to undefined method App\Models\Post::getCategory
+#0 /home/koni/projects/blog-fikri/app/Controllers/Post.php(36): CodeIgniter\Model->__call()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Post->show()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#3 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#6 {main}
+CRITICAL - 2021-05-27 09:14:42 --> Call to undefined method App\Models\Post::readPost
+#0 /home/koni/projects/blog-fikri/app/Controllers/Post.php(36): CodeIgniter\Model->__call()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Post->show()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#3 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#6 {main}
+ERROR - 2021-05-27 09:18:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'show' at line 1
+CRITICAL - 2021-05-27 09:18:47 --> Call to undefined method App\Models\Post::query
+#0 /home/koni/projects/blog-fikri/app/Controllers/Post.php(36): CodeIgniter\Model->__call()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Post->show()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#3 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#6 {main}
+ERROR - 2021-05-27 09:18:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'show' at line 1
+CRITICAL - 2021-05-27 09:18:48 --> Call to undefined method App\Models\Post::query
+#0 /home/koni/projects/blog-fikri/app/Controllers/Post.php(36): CodeIgniter\Model->__call()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Post->show()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#3 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#6 {main}
+ERROR - 2021-05-27 09:18:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'show' at line 1
+CRITICAL - 2021-05-27 09:18:53 --> Call to undefined method App\Models\Post::query
+#0 /home/koni/projects/blog-fikri/app/Controllers/Post.php(36): CodeIgniter\Model->__call()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Post->show()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#3 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#6 {main}
+ERROR - 2021-05-27 09:18:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'show' at line 1
+CRITICAL - 2021-05-27 09:18:55 --> Call to undefined method App\Models\Post::query
+#0 /home/koni/projects/blog-fikri/app/Controllers/Post.php(36): CodeIgniter\Model->__call()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Post->show()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#3 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#6 {main}
+ERROR - 2021-05-27 09:19:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'show' at line 1
+CRITICAL - 2021-05-27 09:19:38 --> Call to undefined method App\Models\Post::query
+#0 /home/koni/projects/blog-fikri/app/Controllers/Post.php(36): CodeIgniter\Model->__call()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Post->show()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#3 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#6 {main}
+ERROR - 2021-05-27 09:19:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'show' at line 1
+CRITICAL - 2021-05-27 09:19:55 --> Call to undefined method App\Models\Post::query
+#0 /home/koni/projects/blog-fikri/app/Controllers/Post.php(36): CodeIgniter\Model->__call()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Post->show()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#3 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#6 {main}
+ERROR - 2021-05-27 09:19:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'show' at line 1
+CRITICAL - 2021-05-27 09:19:56 --> Call to undefined method App\Models\Post::query
+#0 /home/koni/projects/blog-fikri/app/Controllers/Post.php(36): CodeIgniter\Model->__call()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Post->show()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#3 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#6 {main}
+ERROR - 2021-05-27 09:19:57 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'show' at line 1
+CRITICAL - 2021-05-27 09:19:57 --> Call to undefined method App\Models\Post::query
+#0 /home/koni/projects/blog-fikri/app/Controllers/Post.php(36): CodeIgniter\Model->__call()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Post->show()
+#2 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#3 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#6 {main}
+CRITICAL - 2021-05-27 10:08:54 --> Cannot declare class App\Models\Komentarmodel, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-05-27 10:19:35 --> syntax error, unexpected token ";", expecting "]"
+#0 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(888): class_exists()
+#4 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(424): CodeIgniter\CodeIgniter->startController()
+#5 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#8 {main}
+CRITICAL - 2021-05-27 10:19:36 --> syntax error, unexpected token ";", expecting "]"
+#0 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(888): class_exists()
+#4 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(424): CodeIgniter\CodeIgniter->startController()
+#5 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/koni/projects/blog-fikri/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 /home/koni/projects/blog-fikri/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/koni/proj...')
+#8 {main}
+ERROR - 2021-05-27 10:47:20 --> Table 'post' already exists
+ERROR - 2021-05-27 10:47:20 --> Table 'komentar' already exists
+CRITICAL - 2021-05-27 11:28:36 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:29:23 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:29:31 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:29:35 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:29:57 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:30:15 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:30:17 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:30:18 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('1')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:30:21 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:30:29 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:30:41 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:30:42 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:30:49 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:30:50 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:31:17 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:31:41 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:31:42 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:31:52 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:31:55 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('1')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:31:58 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('4')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:32:55 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('4')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:33:06 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('4')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:34:58 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:34:59 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:35:00 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:35:15 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:36:52 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:37:20 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:37:22 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 11:37:40 --> Class "App\Models\Komentar" not found
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 12:43:49 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::findAll()
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 12:45:08 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 12:46:04 --> Call to undefined method App\Models\KomentarModels::get_where
+#0 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Post.php(30): CodeIgniter\Model->__call('get_where', Array)
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-05-27 12:46:27 --> Object of class App\Controllers\Post could not be converted to string
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 12:46:36 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 12:46:39 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::row()
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-27 12:47:17 --> syntax error, unexpected token "if"
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(888): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(424): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-05-27 12:47:20 --> Undefined property: App\Controllers\Post::$db
+#0 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Post.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-05-27 12:47:53 --> Call to undefined method App\Models\PostModels::getKomentar
+#0 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Post.php(26): CodeIgniter\Model->__call('getKomentar', Array)
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-05-27 12:48:02 --> Call to undefined method App\Models\PostModels::getKomentar
+#0 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Post.php(26): CodeIgniter\Model->__call('getKomentar', Array)
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-05-27 12:49:09 --> Undefined variable $postId
+#0 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Post.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 30)
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-05-27 12:49:18 --> Undefined variable $userId
+#0 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Post.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 30)
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-05-27 12:49:26 --> Undefined variable $userId
+#0 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Post.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 30)
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-05-27 12:49:27 --> syntax error, unexpected identifier "s", expecting ")"
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(888): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(424): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-05-27 12:55:10 --> Call to undefined method App\Models\KomentarModels::getComment
+#0 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Post.php(30): CodeIgniter\Model->__call('getComment', Array)
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-05-27 12:55:39 --> Undefined variable $comment
+#0 C:\xampp\htdocs\project-uts-sm4\app\Models\PostModels.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22)
+#1 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Post.php(26): App\Models\PostModels->getComment('3')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-05-27 12:55:41 --> Undefined variable $comment
+#0 C:\xampp\htdocs\project-uts-sm4\app\Models\PostModels.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22)
+#1 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Post.php(26): App\Models\PostModels->getComment('3')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-05-27 12:56:11 --> syntax error, unexpected variable "$comment", expecting "function" or "const"
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Post...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Post...')
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\RESTful\BaseResource.php(64): class_exists('App\\Models\\Post...')
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\RESTful\BaseResource.php(43): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Post...')
+#5 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#6 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#7 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-05-27 12:56:16 --> syntax error, unexpected variable "$comment"
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Post...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Post...')
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\RESTful\BaseResource.php(64): class_exists('App\\Models\\Post...')
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\RESTful\BaseResource.php(43): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Post...')
+#5 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#6 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#7 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-05-27 12:56:22 --> Undefined variable $comment
+#0 C:\xampp\htdocs\project-uts-sm4\app\Models\PostModels.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22)
+#1 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Post.php(26): App\Models\PostModels->getComment('3')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-05-27 12:56:31 --> syntax error, unexpected single-quoted string "komentar", expecting identifier or variable or "{" or "$"
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Post...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Post...')
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\RESTful\BaseResource.php(64): class_exists('App\\Models\\Post...')
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\RESTful\BaseResource.php(43): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Post...')
+#5 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#6 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#7 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-05-27 12:56:38 --> syntax error, unexpected double-quoted string "komentar", expecting identifier or variable or "{" or "$"
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Post...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Post...')
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\RESTful\BaseResource.php(64): class_exists('App\\Models\\Post...')
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\RESTful\BaseResource.php(43): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Post...')
+#5 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#6 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#7 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-05-27 12:56:53 --> Undefined variable $comment
+#0 C:\xampp\htdocs\project-uts-sm4\app\Models\PostModels.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22)
+#1 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Post.php(26): App\Models\PostModels->getComment('3')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-05-27 12:56:59 --> Undefined variable $comment
+#0 C:\xampp\htdocs\project-uts-sm4\app\Models\PostModels.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22)
+#1 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Post.php(26): App\Models\PostModels->getComment('3')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-05-27 12:58:31 --> Undefined variable $db
+#0 C:\xampp\htdocs\project-uts-sm4\app\Models\PostModels.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Post.php(26): App\Models\PostModels->getComment('3')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-05-27 12:58:31 --> Undefined variable $db
+#0 C:\xampp\htdocs\project-uts-sm4\app\Models\PostModels.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Post.php(26): App\Models\PostModels->getComment('3')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-05-27 12:58:31 --> Undefined variable $db
+#0 C:\xampp\htdocs\project-uts-sm4\app\Models\PostModels.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Post.php(26): App\Models\PostModels->getComment('3')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-05-27 12:58:32 --> Undefined variable $db
+#0 C:\xampp\htdocs\project-uts-sm4\app\Models\PostModels.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Post.php(26): App\Models\PostModels->getComment('3')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-05-27 12:58:32 --> Undefined variable $db
+#0 C:\xampp\htdocs\project-uts-sm4\app\Models\PostModels.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Post.php(26): App\Models\PostModels->getComment('3')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-05-27 12:58:32 --> Undefined variable $db
+#0 C:\xampp\htdocs\project-uts-sm4\app\Models\PostModels.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Post.php(26): App\Models\PostModels->getComment('3')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-05-27 12:58:36 --> Undefined constant "App\Models\db"
+#0 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Post.php(26): App\Models\PostModels->getComment('3')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-05-27 12:58:44 --> Undefined variable $getComment
+#0 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Post.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 31)
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Post->show('3')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-05-27 13:07:17 --> Undefined variable $baseurl
+#0 C:\xampp\htdocs\project-uts-sm4\app\Views\welcome_message.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16)
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('welcome_message', Array, true)
+#4 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Home.php(9): view('welcome_message')
+#5 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-05-27 13:07:22 --> Undefined variable $base_url
+#0 C:\xampp\htdocs\project-uts-sm4\app\Views\welcome_message.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16)
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('welcome_message', Array, true)
+#4 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Home.php(9): view('welcome_message')
+#5 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-05-27 13:07:28 --> Undefined variable $baseURL
+#0 C:\xampp\htdocs\project-uts-sm4\app\Views\welcome_message.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16)
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('welcome_message', Array, true)
+#4 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Home.php(9): view('welcome_message')
+#5 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-05-27 13:07:59 --> Undefined variable $baseURL
+#0 C:\xampp\htdocs\project-uts-sm4\app\Views\welcome_message.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16)
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('welcome_message', Array, true)
+#4 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Home.php(9): view('welcome_message')
+#5 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-05-27 13:08:07 --> Undefined variable $data
+#0 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Home.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 9)
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-05-27 13:08:12 --> syntax error, unexpected identifier "view"
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(888): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(424): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-05-27 13:08:13 --> Undefined variable $data
+#0 C:\xampp\htdocs\project-uts-sm4\app\Controllers\Home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 10)
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-05-27 14:02:06 --> syntax error, unexpected token "/"
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('komentar/3')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(812): CodeIgniter\Router\Router->handle('komentar/3')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(392): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-05-27 14:02:11 --> syntax error, unexpected token "/"
+#0 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('komentar/3')
+#1 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(812): CodeIgniter\Router\Router->handle('komentar/3')
+#2 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(392): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\project-uts-sm4\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\project-uts-sm4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
